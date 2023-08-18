@@ -318,3 +318,14 @@ footer p {
 
 
 /* RESPONSIVE CODE */
+@media (min-width: 390px) and (max-width: 680px) {
+    body {
+        background-color: green;
+    }
+    .fixed-side {
+        height: 100%;
+    }
+    .header ul {
+        display: none;
+    }
+}
