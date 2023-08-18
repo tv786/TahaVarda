@@ -57,12 +57,12 @@ body {
     padding: 0;
     margin: 0;
     background-color: #212121;
-    background-image: url("./images/site-bg.jpg");
-    background-attachment: fixed;
+    /* background-image: url("./images/site-bg.jpg"); */
+    /* background-attachment: fixed;
     background-repeat: repeat;
     background-position: center;
     background-size: contain;
-    background-blend-mode: soft-light;
+    background-blend-mode: soft-light; */
 }
 
 body section {
@@ -320,10 +320,14 @@ footer p {
 /* RESPONSIVE CODE */
 @media (min-width: 390px) and (max-width: 680px) {
     body {
-        background-color: green;
+        /* background-color: green; */
+    }
+    .grid-container {
+        grid-template-columns: 25px auto;
     }
     .fixed-side {
         height: 100%;
+        border-right: 1px solid #484848;
     }
     .header ul {
         display: none;
