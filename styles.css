@@ -333,20 +333,24 @@ footer p {
 
     /* Global Style */
     .global-head-subHead h2 {
-        font-size: 3rem; /* Adjust font size for smaller screens */
+        font-size: 3rem;
+        /* Adjust font size for smaller screens */
     }
 
     .global-head-subHead h3 {
-        font-size: 1rem; /* Adjust font size for smaller screens */
+        font-size: 1rem;
+        /* Adjust font size for smaller screens */
     }
 
     .global-head-subHead p {
-        font-size: 1rem; /* Adjust font size for smaller screens */
+        font-size: 1rem;
+        /* Adjust font size for smaller screens */
     }
 
     .myImg,
     .myImg2 {
-        height: 200px; /* Reduce image height for smaller screens */
+        height: 200px;
+        /* Reduce image height for smaller screens */
         margin-top: 20px;
         margin-bottom: 40px;
         background-position: right;
@@ -355,67 +359,84 @@ footer p {
     /* Header and Footer */
     .header,
     footer {
-        flex-direction: column; /* Stack header and footer items vertically */
+        flex-direction: column;
+        /* Stack header and footer items vertically */
         text-align: center;
         margin-bottom: 40px;
     }
 
     .header ul li,
     footer ul li {
-        margin: 10px 10px; /* Add space between header and footer links */
+        margin: 10px 10px;
+        /* Add space between header and footer links */
         line-height: 40px;
     }
 
     /* About */
     .about .me h1 {
-        font-size: 3.1rem; /* Adjust font size for smaller screens */
+        font-size: 3.1rem;
+        /* Adjust font size for smaller screens */
         margin: 0 0 10px 0;
     }
+
     .about .me h2 {
         font-size: 1rem;
     }
 
     .downArrow {
-        font-size: 1.5rem; /* Adjust font size for smaller screens */
+        font-size: 1.5rem;
+        /* Adjust font size for smaller screens */
     }
 
     /* Experience */
     .experience .item {
         text-align: center;
-        padding: 10px 0px; /* Reduce padding for smaller screens */
-        width: 100%; /* Make experience items full width */
+        padding: 10px 0px;
+        /* Reduce padding for smaller screens */
+        width: 100%;
+        /* Make experience items full width */
     }
 
     .experience .left {
-        border-right: none; /* Remove right border for smaller screens */
-        font-size: 1.5rem; /* Adjust font size for smaller screens */
-        margin-bottom: 20px; /* Add space between experience items */
+        border-right: none;
+        /* Remove right border for smaller screens */
+        font-size: 1.5rem;
+        /* Adjust font size for smaller screens */
+        margin-bottom: 20px;
+        /* Add space between experience items */
     }
 
     .experience .right {
         text-align: center;
-        margin-top: 20px; /* Add space between experience items */
+        margin-top: 20px;
+        /* Add space between experience items */
     }
 
     /* Portfolio */
     .allProjects {
-        padding: 5px; /* Reduce padding for smaller screens */
-        gap: 50px; /* Increase gap between portfolio items */
+        padding: 5px 0;
+        /* Reduce padding for smaller screens */
+        gap: 30px;
+        /* Increase gap between portfolio items */
     }
 
     .project {
-        flex-basis: 40%; /* Make portfolio items wider for smaller screens */
+        flex-basis: 40%;
+        /* Make portfolio items wider for smaller screens */
     }
 
     .project h5 {
-        font-size: 1.2rem; /* Adjust font size for smaller screens */
+        font-size: 1.2rem;
+        /* Adjust font size for smaller screens */
         margin: 10px 0;
     }
 
     /* Services */
     .allServices li {
-        font-size: 2rem; /* Adjust font size for smaller screens */
-        margin: 10px; /* Add space between service items */
+        font-size: 2rem;
+        /* Adjust font size for smaller screens */
+        margin: 10px;
+        /* Add space between service items */
     }
 
     /* Contact */
@@ -423,8 +444,10 @@ footer p {
         display: block;
         margin-bottom: 50px;
     }
-   .contact_detail a {
-        font-size: 1.2rem; /* Adjust font size for smaller screens */
+
+    .contact_detail a {
+        font-size: 1.2rem;
+        /* Adjust font size for smaller screens */
     }
 
     /* Prevent horizontal scrolling */
