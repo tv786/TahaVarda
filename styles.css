@@ -73,8 +73,8 @@ body section {
 .grid-container {
     display: grid;
     grid-template-columns: 55px auto;
-    grid-template-rows: 100vh;
-    width: 100%;
+    grid-template-rows: 100%;
+    width: auto;
     gap: 0px;
 }
 
@@ -320,15 +320,29 @@ footer p {
 /* RESPONSIVE CODE */
 @media (min-width: 390px) and (max-width: 680px) {
 
-    .grid-container {
-        grid-template-columns: 25px auto;
-    }
-
     .fixed-side img{
         height: 100%;
+        width: 35px;
     }
-
     .header ul {
         display: none;
     }
+    /* Global Responsive */
+
+    .global-head-subHead h2 {
+        font-size: 3.2rem;
+    }
+    
+    .global-head-subHead h3 {
+        font-size: 1rem;   
+    }
+    
+    .global-head-subHead p {
+        font-size: 0.9rem;
+    }
+
+    .about .me h1 {
+        font-size: 3.5rem;
+    }
+    
 }
