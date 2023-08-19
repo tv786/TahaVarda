@@ -97,7 +97,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 100px;
+    margin-bottom: 30px;
     padding: 0 20px;
 }
 
@@ -294,6 +294,7 @@ footer p {
 .contact_detail li {
     list-style: none;
     display: inline;
+    text-align: center;
 }
 
 .contact_detail a {
