@@ -319,16 +319,15 @@ footer p {
 
 /* RESPONSIVE CODE */
 @media (min-width: 390px) and (max-width: 680px) {
-    body {
-        /* background-color: green; */
-    }
+
     .grid-container {
         grid-template-columns: 25px auto;
     }
-    .fixed-side {
+
+    .fixed-side img{
         height: 100%;
-        border-right: 1px solid #484848;
     }
+
     .header ul {
         display: none;
     }
