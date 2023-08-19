@@ -323,60 +323,6 @@ footer p {
 
 
 /* RESPONSIVE CODE */
-@media (min-width: 390px) and (max-width: 680px) {
-
-    /* .fixed-side img {
-        height: 100%;
-        width: 40px;
-    }
-
-    .mainBody {
-        margin-right: 0;
-    }
-
-    .header ul {
-        display: none;
-    }
-
-    /* Global Responsive */
-
-    /* .global-head-subHead h2 {
-        font-size: 3.2rem;
-    }
-
-    .global-head-subHead h3 {
-        font-size: 1rem;
-    }
-
-    .global-head-subHead p {
-        font-size: 1rem;
-    }
-
-    .about .me h1 {
-        font-size: 3.3rem;
-    }
-
-    .experience {
-        gap: 10px;
-        border: none;
-        margin: 0;
-        width: 95%;
-    }
-
-    .experience .item {
-        padding: 10px;
-        width: 100%;
-    }
-
-    .experience .left {
-        font-size: 2rem;
-        text-align: center;
-        border: none;
-    }  */
-
-}
-
-/* Responsive Code */
 @media (max-width: 768px) {
 
     .fixed-side img {
@@ -415,7 +361,8 @@ footer p {
 
     .header ul li,
     footer ul li {
-        margin: 10px 0; /* Add space between header and footer links */
+        margin: 10px 10px; /* Add space between header and footer links */
+        line-height: 40px;
     }
 
     /* About */
