@@ -187,7 +187,7 @@ footer p {
     justify-content: center;
     align-items: center;
     gap: 0px;
-    height: 320px;
+    height: 100%;
     width: 90%;
     border-top: 1px solid lightgrey;
     margin: 30px 0 0 0;
@@ -319,33 +319,50 @@ footer p {
 
 /* RESPONSIVE CODE */
 @media (min-width: 390px) and (max-width: 680px) {
-    html {
-        font-size: 10px;
-    }
-    
-    .fixed-side img{
+
+    .fixed-side img {
         height: 100%;
         width: 40px;
     }
+
     .header ul {
         display: none;
     }
+
     /* Global Responsive */
-/* 
+
     .global-head-subHead h2 {
         font-size: 3.2rem;
     }
-    
+
     .global-head-subHead h3 {
-        font-size: 1rem;   
+        font-size: 1rem;
     }
-    
+
     .global-head-subHead p {
-        font-size: 0.9rem;
+        font-size: 1rem;
     }
 
     .about .me h1 {
-        font-size: 3.5rem;
-    } */
-    
+        font-size: 3.3rem;
+    }
+
+    .experience {
+        gap: 10px;
+        border: none;
+        margin: 0;
+        width: 95%;
+    }
+
+    .experience .item {
+        padding: 10px;
+        width: 100%;
+    }
+
+    .experience .left {
+        font-size: 2rem;
+        text-align: center;
+        border: none;
+    }
+
 }
