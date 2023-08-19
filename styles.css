@@ -369,11 +369,19 @@ footer p {
         border: none;
     }  */
 
-    /* Responsive Code */
+}
+
+/* Responsive Code */
 @media (max-width: 768px) {
+
+    .fixed-side img {
+        height: 100%;
+        width: 40px;
+    }
+
     /* Global Style */
     .global-head-subHead h2 {
-        font-size: 5rem; /* Adjust font size for smaller screens */
+        font-size: 4rem; /* Adjust font size for smaller screens */
     }
 
     .global-head-subHead h3 {
@@ -406,12 +414,12 @@ footer p {
 
     /* About */
     .about .me h1 {
-        font-size: 5rem; /* Adjust font size for smaller screens */
+        font-size: 4rem; /* Adjust font size for smaller screens */
         margin: 0 0 10px 0;
     }
 
     .downArrow {
-        font-size: 2rem; /* Adjust font size for smaller screens */
+        font-size: 1.5rem; /* Adjust font size for smaller screens */
     }
 
     /* Experience */
@@ -422,7 +430,7 @@ footer p {
 
     .experience .left {
         border-right: none; /* Remove right border for smaller screens */
-        font-size: 2rem; /* Adjust font size for smaller screens */
+        font-size: 1.5rem; /* Adjust font size for smaller screens */
         margin-bottom: 20px; /* Add space between experience items */
     }
 
@@ -448,7 +456,7 @@ footer p {
 
     /* Services */
     .allServices li {
-        font-size: 2.5rem; /* Adjust font size for smaller screens */
+        font-size: 2rem; /* Adjust font size for smaller screens */
         margin: 10px; /* Add space between service items */
     }
 
@@ -465,7 +473,9 @@ footer p {
     .contact_detail .num {
         padding: 10px 20px; /* Adjust padding for smaller screens */
     }
-}
 
-
+    /* Prevent horizontal scrolling */
+    body {
+        overflow-x: hidden;
+    }
 }
