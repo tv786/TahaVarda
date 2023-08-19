@@ -34,7 +34,7 @@
 .myImg2 {
     background-color: #7a88c0;
     background-blend-mode: multiply;
-    width: 100%;
+    width: auto;
     height: 350px;
     margin-top: 30px;
     margin-bottom: 80px;
@@ -319,16 +319,19 @@ footer p {
 
 /* RESPONSIVE CODE */
 @media (min-width: 390px) and (max-width: 680px) {
-
+    html {
+        font-size: 10px;
+    }
+    
     .fixed-side img{
         height: 100%;
-        width: 35px;
+        width: 40px;
     }
     .header ul {
         display: none;
     }
     /* Global Responsive */
-
+/* 
     .global-head-subHead h2 {
         font-size: 3.2rem;
     }
@@ -343,6 +346,6 @@ footer p {
 
     .about .me h1 {
         font-size: 3.5rem;
-    }
+    } */
     
 }
