@@ -440,9 +440,6 @@ footer p {
     }
 
     /* Contact */
-    .contact_detail ul {
-        padding: 0;
-    }
     .contact_detail li {
         display: block;
         margin-bottom: 50px;
@@ -456,5 +453,8 @@ footer p {
     /* Prevent horizontal scrolling */
     body {
         overflow-x: hidden;
+    }
+    ul {
+        padding: 0;
     }
 }
