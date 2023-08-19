@@ -291,6 +291,11 @@ footer p {
     margin: 50px;
 }
 
+.contact_detail li {
+    list-style: none;
+    display: inline;
+}
+
 .contact_detail a {
     text-decoration: none;
     font-size: 1.5rem;
@@ -376,12 +381,12 @@ footer p {
 
     .fixed-side img {
         height: 100%;
-        width: 40px;
+        width: 38px;
     }
 
     /* Global Style */
     .global-head-subHead h2 {
-        font-size: 4rem; /* Adjust font size for smaller screens */
+        font-size: 3rem; /* Adjust font size for smaller screens */
     }
 
     .global-head-subHead h3 {
@@ -394,9 +399,10 @@ footer p {
 
     .myImg,
     .myImg2 {
-        height: 250px; /* Reduce image height for smaller screens */
+        height: 200px; /* Reduce image height for smaller screens */
         margin-top: 20px;
         margin-bottom: 40px;
+        background-position: right;
     }
 
     /* Header and Footer */
@@ -414,8 +420,11 @@ footer p {
 
     /* About */
     .about .me h1 {
-        font-size: 4rem; /* Adjust font size for smaller screens */
+        font-size: 3.1rem; /* Adjust font size for smaller screens */
         margin: 0 0 10px 0;
+    }
+    .about .me h2 {
+        font-size: 1rem;
     }
 
     .downArrow {
@@ -424,7 +433,8 @@ footer p {
 
     /* Experience */
     .experience .item {
-        padding: 10px 15px; /* Reduce padding for smaller screens */
+        text-align: center;
+        padding: 10px 0px; /* Reduce padding for smaller screens */
         width: 100%; /* Make experience items full width */
     }
 
@@ -441,8 +451,8 @@ footer p {
 
     /* Portfolio */
     .allProjects {
-        padding: 10px; /* Reduce padding for smaller screens */
-        gap: 30px; /* Increase gap between portfolio items */
+        padding: 5px; /* Reduce padding for smaller screens */
+        gap: 50px; /* Increase gap between portfolio items */
     }
 
     .project {
@@ -461,17 +471,12 @@ footer p {
     }
 
     /* Contact */
-    .contact_detail {
-        margin: 30px;
+    .contact_detail li {
+        display: block;
+        margin-bottom: 50px;
     }
-
-    .contact_detail a {
+   .contact_detail a {
         font-size: 1.2rem; /* Adjust font size for smaller screens */
-        margin: 10px;
-    }
-
-    .contact_detail .num {
-        padding: 10px 20px; /* Adjust padding for smaller screens */
     }
 
     /* Prevent horizontal scrolling */
