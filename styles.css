@@ -57,12 +57,16 @@ body {
     padding: 0;
     margin: 0;
     background-color: #212121;
-    /* background-image: url("./images/site-bg.jpg"); */
-    /* background-attachment: fixed;
+    background-image: url("./images/site-bg.jpg");
+    background-attachment: fixed;
     background-repeat: repeat;
     background-position: center;
     background-size: contain;
-    background-blend-mode: soft-light; */
+    background-blend-mode: soft-light;
+}
+
+ul {
+    padding: 0;
 }
 
 body section {
@@ -454,6 +458,7 @@ footer p {
     body {
         overflow-x: hidden;
     }
+
     ul {
         padding: 0;
     }
