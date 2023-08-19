@@ -320,9 +320,13 @@ footer p {
 /* RESPONSIVE CODE */
 @media (min-width: 390px) and (max-width: 680px) {
 
-    .fixed-side img {
+    /* .fixed-side img {
         height: 100%;
         width: 40px;
+    }
+
+    .mainBody {
+        margin-right: 0;
     }
 
     .header ul {
@@ -331,7 +335,7 @@ footer p {
 
     /* Global Responsive */
 
-    .global-head-subHead h2 {
+    /* .global-head-subHead h2 {
         font-size: 3.2rem;
     }
 
@@ -363,6 +367,105 @@ footer p {
         font-size: 2rem;
         text-align: center;
         border: none;
+    }  */
+
+    /* Responsive Code */
+@media (max-width: 768px) {
+    /* Global Style */
+    .global-head-subHead h2 {
+        font-size: 5rem; /* Adjust font size for smaller screens */
     }
+
+    .global-head-subHead h3 {
+        font-size: 1rem; /* Adjust font size for smaller screens */
+    }
+
+    .global-head-subHead p {
+        font-size: 1rem; /* Adjust font size for smaller screens */
+    }
+
+    .myImg,
+    .myImg2 {
+        height: 250px; /* Reduce image height for smaller screens */
+        margin-top: 20px;
+        margin-bottom: 40px;
+    }
+
+    /* Header and Footer */
+    .header,
+    footer {
+        flex-direction: column; /* Stack header and footer items vertically */
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .header ul li,
+    footer ul li {
+        margin: 10px 0; /* Add space between header and footer links */
+    }
+
+    /* About */
+    .about .me h1 {
+        font-size: 5rem; /* Adjust font size for smaller screens */
+        margin: 0 0 10px 0;
+    }
+
+    .downArrow {
+        font-size: 2rem; /* Adjust font size for smaller screens */
+    }
+
+    /* Experience */
+    .experience .item {
+        padding: 10px 15px; /* Reduce padding for smaller screens */
+        width: 100%; /* Make experience items full width */
+    }
+
+    .experience .left {
+        border-right: none; /* Remove right border for smaller screens */
+        font-size: 2rem; /* Adjust font size for smaller screens */
+        margin-bottom: 20px; /* Add space between experience items */
+    }
+
+    .experience .right {
+        text-align: center;
+        margin-top: 20px; /* Add space between experience items */
+    }
+
+    /* Portfolio */
+    .allProjects {
+        padding: 10px; /* Reduce padding for smaller screens */
+        gap: 30px; /* Increase gap between portfolio items */
+    }
+
+    .project {
+        flex-basis: 40%; /* Make portfolio items wider for smaller screens */
+    }
+
+    .project h5 {
+        font-size: 1.2rem; /* Adjust font size for smaller screens */
+        margin: 10px 0;
+    }
+
+    /* Services */
+    .allServices li {
+        font-size: 2.5rem; /* Adjust font size for smaller screens */
+        margin: 10px; /* Add space between service items */
+    }
+
+    /* Contact */
+    .contact_detail {
+        margin: 30px;
+    }
+
+    .contact_detail a {
+        font-size: 1.2rem; /* Adjust font size for smaller screens */
+        margin: 10px;
+    }
+
+    .contact_detail .num {
+        padding: 10px 20px; /* Adjust padding for smaller screens */
+    }
+}
+
 
 }
