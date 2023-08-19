@@ -72,7 +72,7 @@ body section {
 /*  */
 .grid-container {
     display: grid;
-    grid-template-columns: 55px auto;
+    grid-template-columns: 50px auto;
     grid-template-rows: 100%;
     width: auto;
     gap: 0px;
@@ -374,9 +374,9 @@ footer p {
 
     /* About */
     .about .me h1 {
-        font-size: 3.1rem;
+        font-size: 3rem;
         /* Adjust font size for smaller screens */
-        margin: 0 0 10px 0;
+        margin: 0 0 20px 0;
     }
 
     .about .me h2 {
