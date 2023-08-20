@@ -140,6 +140,14 @@ footer p {
     letter-spacing: 0.5px;
 }
 
+.freelance-portals img {
+    width: 50px;
+}
+
+.freelance-portals img:hover {
+    transform: scale(1.1);
+}
+
 /* ABOUT */
 .about {
     display: flex;
@@ -332,11 +340,13 @@ footer p {
     background-color: #7a88c0;
     padding: 15px 30px;
 }
+
 .contact_detail .cv:hover {
     color: white;
 }
 
 /* RESPONSIVE CODE */
+
 @media (max-width: 768px) {
 
     .fixed-side img {
