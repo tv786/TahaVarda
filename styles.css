@@ -327,6 +327,14 @@ footer p {
     color: #2FCBEF;
 }
 
+.contact_detail .cv {
+    color: #E6DB74;
+    background-color: #7a88c0;
+    padding: 15px 30px;
+}
+.contact_detail .cv:hover {
+    color: white;
+}
 
 /* RESPONSIVE CODE */
 @media (max-width: 768px) {
