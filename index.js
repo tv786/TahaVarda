@@ -36,3 +36,30 @@ function erase() {
 }
 
 type(); // Start typing animation
+
+// //////
+
+// Function to add a new project
+function addProject(projectName, imageUrl, siteUrl) {
+  const projectDiv = $('<div>').addClass('project');
+  const projectLink = $('<a>').attr('href', siteUrl).attr('target', '_blank');
+  const projectImage = $('<img>').attr('src', imageUrl).attr('alt', projectName);
+  const projectNameElement = $('<h5>').text(projectName);
+  
+  projectLink.append(projectImage, projectNameElement);
+  projectDiv.append(projectLink);
+  $('#projects-container').append(projectDiv);
+}
+
+// Add Projects
+addProject('Go-Finance', './images/1.jpeg', 'https://go-infofinance.com/');
+addProject('Go-tech Solutions', './images/2.jpeg', 'https://go-techsolution.org/');
+addProject('Hidden Smiles', './images/3.jpeg', 'http://hidden-smiles.com/');
+addProject('Jawahar Deep cleaning', './images/4.jpeg', 'http://jawahardeepcleaning.com/');
+addProject('Travinix', './images/5.jpeg', 'https://visittravenex.com/');
+addProject('Turquoise', './images/6.jpeg', 'https://trqauto.com/');
+addProject('Tiru Pooja Store', './images/7.jpeg', 'https://tirupoojastore.in/');
+addProject('Angel Wealth Advisor', './images/8.jpeg', 'https://angelwealthadvisors.com/');
+addProject('LEPI Ventures', './images/9.jpeg', 'https://moon-tech.eu/');
+addProject('Tech Now', './images/10.jpeg', 'https://tech-now.io/');
+addProject('Weddings For U', './images/11.jpeg', 'https://weddingsforu.in/');
