@@ -70,6 +70,7 @@ body {
   white-space: nowrap;
   overflow: hidden;
   animation: typing 4s steps(40, end);
+  text-wrap: wrap;
 }
 
 @keyframes typing {
