@@ -69,3 +69,4 @@ addProject('Raj Astrologer', './images/14.jpeg', 'https://rajastrologer.in/');
 addProject('Eurodoors', './images/15.jpeg', 'https://eurodoors.org/');
 addProject('Gutachter24', './images/16.jpeg', 'https://gutachter24.berlin/');
 addProject('PDS Clicks', './images/17.jpeg', 'https://pdsclicks.in/');
+addProject('Alaikha', './images/18.jpeg', 'https://alaikha.com/');
