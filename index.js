@@ -55,7 +55,7 @@ function addProject(projectName, imageUrl, siteUrl) {
 addProject('Go-Finance', './images/1.jpeg', 'https://go-infofinance.com/');
 addProject('Go-tech Solutions', './images/2.jpeg', 'https://go-techsolution.org/');
 addProject('Hidden Smiles', './images/3.jpeg', 'http://hidden-smiles.com/');
-addProject('Jawahar Deep cleaning', './images/4.jpeg', 'http://jawahardeepcleaning.com/');
+addProject('Jawahar Deep cleaning', './images/4.jpeg', 'https://jawahardeepcleaning.com/');
 addProject('Travinix', './images/5.jpeg', 'https://visittravenex.com/');
 addProject('Turquoise', './images/6.jpeg', 'https://trqauto.com/');
 addProject('Tiru Pooja Store', './images/7.jpeg', 'https://tirupoojastore.in/');
@@ -71,3 +71,4 @@ addProject('Gutachter24', './images/16.jpeg', 'https://gutachter24.berlin/');
 addProject('PDS Clicks', './images/17.jpeg', 'https://pdsclicks.in/');
 addProject('Alaikha', './images/18.jpeg', 'https://alaikha.com/');
 addProject('4D', './images/19.jpeg', 'https://www.thefourd.com/');
+addProject('Swarit Studios', './images/20.jpeg', '#');
