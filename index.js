@@ -74,3 +74,4 @@ addProject('4D', './images/19.jpeg', 'https://www.thefourd.com/');
 addProject('Swarit Studios', './images/20.jpeg', '#');
 addProject('Tech Now', './images/21.jpeg', '#');
 addProject('Venture Capital', './images/22.jpeg', '#');
+addProject('Siberia Snus', './images/23.jpeg', '#');
