@@ -72,3 +72,5 @@ addProject('PDS Clicks', './images/17.jpeg', 'https://pdsclicks.in/');
 addProject('Alaikha', './images/18.jpeg', 'https://alaikha.com/');
 addProject('4D', './images/19.jpeg', 'https://www.thefourd.com/');
 addProject('Swarit Studios', './images/20.jpeg', '#');
+addProject('Tech Now', './images/21.jpeg', '#');
+addProject('Venture Capital', './images/22.jpeg', '#');
