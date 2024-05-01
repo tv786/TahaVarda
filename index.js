@@ -54,11 +54,11 @@ function addProject(projectName, imageUrl, siteUrl) {
 // Add Projects
 addProject('Angel Wealth Advisor', './images/8.jpeg', 'https://angelwealthadvisors.com/');
 addProject('Hidden Smiles', './images/3.jpeg', 'http://hidden-smiles.com/');
-addProject('LEPI Venture', './images/9.jpeg', '#');
+addProject('LEPI Venture', './images/9.jpeg', '#portfolio');
 addProject('Tech Now', './images/21.jpeg', 'https://tech-now.io/');
 addProject('Eurodoors', './images/15.jpeg', 'https://eurodoors.org/');
 addProject('Siberia Snus', './images/23.jpeg', 'https://www.siberia-snus.de/');
-addProject('Venture Capital', './images/22.jpeg', '#');
+addProject('Venture Capital', './images/22.jpeg', '#portfolio');
 addProject('Gutachter24', './images/16.jpeg', 'https://gutachter24.berlin/');
 addProject('Go-Finance', './images/1.jpeg', 'https://go-infofinance.com/');
 addProject('Go-tech Solutions', './images/2.jpeg', 'https://go-techsolution.org/');
@@ -73,5 +73,5 @@ addProject('Raj Astrologer', './images/14.jpeg', 'https://rajastrologer.in/');
 addProject('PDS Clicks', './images/17.jpeg', 'https://pdsclicks.in/');
 addProject('Alaikha', './images/18.jpeg', 'https://alaikha.com/');
 addProject('4D', './images/19.jpeg', 'https://www.thefourd.com/');
-addProject('Swarit Studios', './images/20.jpeg', '#');
+addProject('Swarit Studios', './images/20.jpeg', '#portfolio');
 addProject('Shree Tours', './images/24.jpeg', 'https://shreetoursudaipur.com/');
