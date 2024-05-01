@@ -74,3 +74,4 @@ addProject('PDS Clicks', './images/17.jpeg', 'https://pdsclicks.in/');
 addProject('Alaikha', './images/18.jpeg', 'https://alaikha.com/');
 addProject('4D', './images/19.jpeg', 'https://www.thefourd.com/');
 addProject('Swarit Studios', './images/20.jpeg', '#');
+addProject('Shree Tours', './images/24.jpeg', 'https://shreetoursudaipur.com/');
