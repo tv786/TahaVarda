@@ -58,7 +58,7 @@ addProject('LEPI Venture', './images/9.jpeg', '#portfolio');
 addProject('Tech Now', './images/21.jpeg', 'https://tech-now.io/');
 addProject('Eurodoors', './images/15.jpeg', 'https://eurodoors.org/');
 addProject('Siberia Snus', './images/23.jpeg', 'https://www.siberia-snus.de/');
-addProject('Venture Capital', './images/22.jpeg', '#portfolio');
+addProject('Em2 Consulting', './images/22.jpeg', 'https://em2-consulting.com/');
 addProject('Gutachter24', './images/16.jpeg', 'https://gutachter24.berlin/');
 addProject('Go-Finance', './images/1.jpeg', 'https://go-infofinance.com/');
 addProject('Go-tech Solutions', './images/2.jpeg', 'https://go-techsolution.org/');
