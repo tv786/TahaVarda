@@ -52,13 +52,13 @@ function addProject(projectName, imageUrl, siteUrl) {
 }
 
 // Add Projects
-addProject('Angel Wealth Advisor', './images/8.jpeg', 'https://angelwealthadvisors.com/');
+addProject('Siberia Snus', './images/23.jpeg', 'https://www.siberia-snus.de/');
 addProject('Hidden Smiles', './images/3.jpeg', 'http://hidden-smiles.com/');
-addProject('LEPI Venture', './images/9.jpeg', '#portfolio');
+addProject('Em2 Consulting', './images/22.jpeg', 'https://em2-consulting.com/');
 addProject('Tech Now', './images/21.jpeg', 'https://tech-now.io/');
 addProject('Eurodoors', './images/15.jpeg', 'https://eurodoors.org/');
-addProject('Siberia Snus', './images/23.jpeg', 'https://www.siberia-snus.de/');
-addProject('Em2 Consulting', './images/22.jpeg', 'https://em2-consulting.com/');
+addProject('Angel Wealth Advisor', './images/8.jpeg', 'https://angelwealthadvisors.com/');
+addProject('LEPI Venture', './images/9.jpeg', '#portfolio');
 addProject('Gutachter24', './images/16.jpeg', 'https://gutachter24.berlin/');
 addProject('Go-Finance', './images/1.jpeg', 'https://go-infofinance.com/');
 addProject('Go-tech Solutions', './images/2.jpeg', 'https://go-techsolution.org/');
