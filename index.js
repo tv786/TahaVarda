@@ -53,6 +53,9 @@ function addProject(projectName, imageUrl, siteUrl) {
 
 // Add Projects
 addProject('Siberia Snus', './images/23.jpeg', 'https://www.siberia-snus.de/');
+addProject('Kinews 24', './images/29.jpeg', 'https://kinews24.de/');
+addProject('ConnectMore', './images/30.jpeg', '#portfolio');
+addProject('Doinsight', './images/31.jpeg', '#portfolio');
 addProject('Hidden Smiles', './images/3.jpeg', 'http://hidden-smiles.com/');
 addProject('Em2 Consulting', './images/22.jpeg', 'https://em2-consulting.com/');
 addProject('Tech Now', './images/21.jpeg', 'https://tech-now.io/');
