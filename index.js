@@ -61,6 +61,7 @@ addProject('Em2 Consulting', './images/22.jpeg', 'https://em2-consulting.com/');
 addProject('Tech Now', './images/21.jpeg', 'https://tech-now.io/');
 addProject('The Aiq', './images/25.jpeg', 'https://theaiq.de/');
 addProject('BMR Digital', './images/32.jpeg', 'https://www.bmr.digital/');
+addProject('J&E Designer Windows', './images/34.jpeg', 'https://jedesignerwindows.in/');
 addProject('Goya Hills', './images/26.jpeg', 'https://goya-hills.com/');
 addProject('MCS Communications', './images/33.jpeg', 'https://mcscommunications.in/');
 addProject('Ayursudha Coaching', './images/27.jpeg', 'https://ayursudhacoaching.com/');
