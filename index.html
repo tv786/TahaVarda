@@ -1,177 +1,270 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <title>Taha Varda</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=VT323&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="icon" type="image/x-icon" href="./images/TV.png" alt="favicon" />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taha Varda | Web Developer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.emailjs.com/sdk/2.6.4/email.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            // https://dashboard.emailjs.com/admin/account
+            emailjs.init({
+              publicKey: "1Zq3_DSsfEv8CQuZQ",
+            });
+        })();
+    </script>
+    <script type="text/javascript">
+        window.onload = function() {
+            document.getElementById('contact-form').addEventListener('submit', function(event) {
+                event.preventDefault();
+                // these IDs from the previous steps
+                emailjs.sendForm('contact_service', 'contact_form', this)
+                    .then(() => {
+                        console.log('SUCCESS!');
+                    }, (error) => {
+                        console.log('FAILED...', error);
+                    });
+            });
+        }
+    </script>
 
-  <body>
-    <div class="grid-container">
-      <div class="item fixed-side">
-        <img src="./images/Code-num.PNG" alt="" />
-      </div>
-
-      <div class="item mainBody" id="home">
-        <!-- Header -->
-        <div class="header">
-          <img
-            src="./images/logo.png"
-            width="140px"
-            alt="Tava Varda web dev logo"
-          />
-          <ul>
-            <li><a href="#home">_home</a></li>
-            <li><a href="#about">_about</a></li>
-            <li><a href="#portfolio">_portfolio</a></li>
-            <li><a href="#services">_services</a></li>
-            <li><a href="#contact">_contact</a></li>
-          </ul>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="container">
+            <div class="logo">Taha<span>Varda</span></div>
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
         </div>
+    </nav>
 
-        <!-- Body Text About-->
-        <section class="about">
-          <div class="me whiteText">
-            <h2>// HI, I'M TAHA, A...</h2>
-            <!-- <h1>{"<span>_Web developer</span>"}</h1> -->
-            <h1>{"<span id="typingSpan"></span>"}</h1>
-            <a href="#about" class="downArrow">&#8659;</a>
-            <div class="myImg"></div>
-          </div>
-
-          <!-- About me -->
-          <div class="global-head-subHead whiteText" id="about">
-            <h3>{//}</h3>
-            <h2>&lt;about_me></h2>
-            <p>
-              Proficient in HTML, CSS, JavaScript, responsive design & Wordpress
-              creating seamless digital experiences.
-            </p>
-          </div>
-
-          <!-- about experience grid -->
-          <div class="experience">
-            <div class="item left">
-              <p>
-                ...I have over 3 years of experience in web development, with a
-                strong background in front-end technologies & Wordpress;
-              </p>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Hello, I'm <span class="highlight">Taha Varda</span></h1>
+                <div class="typing-text">I build <span id="changing-text">websites</span></div>
+                <p>A passionate full-stack web developer focused on creating interactive, accessible, and responsive web experiences.</p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View Work</a>
+                    <a href="#contact" class="btn btn-outline">Contact Me</a>
+                </div>
             </div>
-            <div class="item right">
-              <img src="./images/logo-2.png" alt="html, css, js logos" />
+            <div class="hero-image">
+                <div class="shape-container">
+                    <div class="shape shape-1"></div>
+                    <div class="shape shape-2"></div>
+                    <div class="shape shape-3"></div>
+                    <div class="code-snippet">
+                        <pre><code>&lt;div class="developer"&gt;
+  const passion = "web";
+  const skills = ["HTML", "CSS", 
+    "JavaScript", "PHP"];
+  function createMagic() {
+    return amazing_websites;
+  }
+&lt;/div&gt;</code></pre>
+                    </div>
+                </div>
             </div>
-          </div>
-        </section>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll Down</span>
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
 
-        <!-- PORTFOLIO SECTION -->
-        <section id="portfolio">
-          <div class="myPortfolio global-head-subHead">
-            <h3>{//}</h3>
-            <h2>&lt;portfolio></h2>
-            <p>
-              As a web developer i had worked on many project from a simple blog
-              site to complex E-commerce website.
-            </p>
-          </div>
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2>My Services</h2>
+                <p>Expertise that brings your vision to digital life</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card" data-aos="fade-up">
+                    <div class="service-icon">
+                        <i class="fab fa-html5"></i>
+                    </div>
+                    <h3>HTML5</h3>
+                    <p>Clean, semantic markup that provides a solid foundation for any web project.</p>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-icon">
+                        <i class="fab fa-css3-alt"></i>
+                    </div>
+                    <h3>CSS3</h3>
+                    <p>Stunning designs with responsive layouts, animations, and modern techniques.</p>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-icon">
+                        <i class="fab fa-js"></i>
+                    </div>
+                    <h3>JavaScript</h3>
+                    <p>Interactive experiences and dynamic functionality that engages your users.</p>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-icon">
+                        <i class="fab fa-wordpress"></i>
+                    </div>
+                    <h3>WordPress</h3>
+                    <p>Custom WordPress themes and plugins that give you full control over your content.</p>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="service-icon">
+                        <i class="fab fa-php"></i>
+                    </div>
+                    <h3>PHP</h3>
+                    <p>Backend solutions that power your dynamic web applications and connect to databases.</p>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="service-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Responsive Design</h3>
+                    <p>Websites that look and function perfectly on any device, from phones to desktops.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-          <div class="allProjects" id="projects-container">
-            <!-- All Project is being added in js by using Function -->
-          </div>
-        </section>
 
-        <!-- My Services -->
-        <section id="services">
-          <div class="myServices global-head-subHead">
-            <h3>{//}</h3>
-            <h2>&lt;services></h2>
-          </div>
-          <div class="allServices">
-            <ul>
-              <li>{" <span>_web designer</span> "}</li>
-              <li>{" <span>_front-end developement</span> "}</li>
-              <li>{" <span>_wordpress development</span> "}</li>
-            </ul>
-          </div>
-        </section>
-
-        <section>
-          <div class="myImg2"></div>
-        </section>
-
-        <!-- CONTACT SECTION -->
-        <section id="contact">
-          <div class="contact_me global-head-subHead">
-            <h3>{*}</h3>
-            <h2>&lt;contact_me></h2>
-            <p>
-              Looking to bring your web project to life? <br />Contact me for
-              professional & innovative web development solutions. Let's
-              collaborate!
-            </p>
-          </div>
-
-          <div class="contact_detail">
-            <ul>
-              <li>
-                <a href="./images/cv.pdf" target="_blank" class="cv"
-                  >My Resume</a
-                >
-              </li>
-              <li>
-                <a href="tel:+91 8003150278" target="_blank" class="num"
-                  >{Call Me}</a
-                >
-              </li>
-              <li>
-                <a
-                  href="mailto:tahavarda52@gmail.com"
-                  target="_blank"
-                  class="email"
-                  >tahavarda52@gmail.com</a
-                >
-              </li>
-            </ul>
-          </div>
-        </section>
-
-        <!-- footer -->
-        <footer>
-          <div>
-            <ul>
-              <li><a href="#home">_home</a></li>
-              <li><a href="#about">_about</a></li>
-              <li><a href="#portfolio">_portfolio</a></li>
-              <li><a href="#services">_services</a></li>
-              <li><a href="#contact">_contact</a></li>
-            </ul>
-          </div>
-          <div class="freelance-portals">
-            <a
-              href="https://www.upwork.com/freelancers/~01d807190be1a3309f"
-              target="_blank"
-            >
-              <img src="./images/upwork logo.png" />
-            </a>
-            <a href="https://www.fiverr.com/taha_v" target="_blank">
-              <img src="./images/fiverr logo.png" />
-            </a>
-          </div>
-          <div>
-            <p>Copyright © 2025 Taha Varda</p>
-          </div>
-        </footer>
+<!-- Projects Section -->
+<section id="projects" class="projects">
+  <div class="container">
+      <div class="section-header">
+          <h2>My Projects</h2>
+          <p>Recent work that showcases my skills and expertise</p>
       </div>
-    </div>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
-    <script src="index.js" type="text/JavaScript" charset="utf-8"></script>
-  </body>
+      <div class="project-filters">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="bussiness">Business</button>
+          <button class="filter-btn" data-filter="ecommerce">E-commerce</button>
+          <button class="filter-btn" data-filter="teaching">Teaching</button>
+          <button class="filter-btn" data-filter="mulitlang">Multi Language</button>
+          <button class="filter-btn" data-filter="news">News</button>
+      </div>
+
+      <!-- Projects will be dynamically inserted here -->
+      <div class="projects-grid">
+          <!-- JavaScript will populate this container -->
+      </div>
+  </div>
+</section>
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Get In Touch</h2>
+                <p>Let's work together on your next project</p>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div>
+                            <h3>Email</h3>
+                            <a href="mailto:tahavarda52@gmail.com"><p>tahavarda52@gmail.com</p></a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div>
+                            <h3>Phone</h3>
+                            <a href="tel:+918003150278"><p>+91 8003150278</p></a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div>
+                            <h3>Location</h3>
+                            <p>Rajasthan, India</p>
+                        </div>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    </div>
+
+                    <div class="cv-download">
+                        <a href="/images/cv.pdf" class="btn btn-primary">
+                            <i class="fas fa-download"></i> Download CV
+                        </a>
+                    </div>
+                </div>
+
+                <div class="contact-form-container">
+                    <form id="contact-form" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary submit-btn" value="Send">
+                            <span class="btn-text">Send Message</span>
+                            <span class="btn-icon"><i class="fas fa-paper-plane"></i></span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="logo">Taha<span>Varda</span></div>
+                <p>&copy; 2025 Taha Varda. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to top button -->
+    <a href="#" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- Cursor follow effect -->
+    <div class="cursor"></div>
+
+    <script src="script.js"></script>
+</body>
 </html>
