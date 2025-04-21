@@ -234,7 +234,7 @@ section {
 
 .nav-links {
   display: flex;
-  gap: 2.5rem;
+  gap: 3rem;
   list-style: none;
 }
 
@@ -1048,3 +1048,4 @@ body:hover .cursor {
       padding: 3rem 2rem;
   }
 }
+
