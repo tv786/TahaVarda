@@ -1256,6 +1256,7 @@ PLUGIN MODAL SECTION
   
   .modal-body {
       padding: 20px;
+      overflow-y: scroll;
   }
 }
 
