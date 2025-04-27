@@ -921,7 +921,7 @@ PLUGIN MODAL SECTION
   animation: modalFadeIn 0.4s;
   background-color: #fff;
   border-radius: 8px;
-  overflow: hidden;
+  overflow-y: scroll;
 }
 
 /* Improved styling for screenshot modal */
@@ -1122,6 +1122,7 @@ PLUGIN MODAL SECTION
 .docs-content {
   line-height: 1.7;
   color: #444;
+  padding: 0 20px;
 }
 
 .docs-content h1,
