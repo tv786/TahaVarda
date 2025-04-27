@@ -710,9 +710,10 @@ const wordpressPlugins = [
         tagline: "Effortless SEO data migration",
         description: "This plugin simplifies the process of migrating SEO metadata between WordPress sites, allowing you to export and import crucial SEO information without losing your valuable optimization work.",
         screenshots: [
-            "./images/plugins/seo-metadata-1.jpg",
-            "./images/plugins/seo-metadata-2.jpg",
-            "./images/plugins/seo-metadata-3.jpg",
+            "./images/plugins/seo-metadata-1.png",
+            "./images/plugins/seo-metadata-2.png",
+            "./images/plugins/seo-metadata-3.png",
+            "./images/plugins/seo-metadata-4.png"
         ],
         features: [
             "One-click export/import functionality",
