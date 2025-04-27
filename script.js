@@ -1299,3 +1299,4 @@ function navigateModalSlide(slider, dots, index) {
     });
 }
 
+// animation
