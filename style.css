@@ -1252,6 +1252,7 @@ PLUGIN MODAL SECTION
   .docs-modal-content {
       max-height: 85vh;
       margin: 5vh auto;
+      overflow: scroll;
   }
   
   .modal-body {
