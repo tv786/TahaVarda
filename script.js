@@ -678,3 +678,623 @@ function initScrollAnimations() {
 }
 });
 
+// WordPress Plugins Data Structure
+const wordpressPlugins = [
+    {
+        id: 1,
+        name: "FormSync",
+        logo: "<i class='fas fa-sync-alt'></i>", // FontAwesome icon as placeholder
+        tagline: "Seamless form data synchronization",
+        description: "FormSync allows WordPress site owners to easily synchronize form submissions across multiple platforms and services, ensuring data consistency and improved workflow automation.",
+        screenshots: [
+            "./images/plugins/formsync-1.png",
+            "./images/plugins/formsync-2.png",
+            "./images/plugins/formsync-3.png",
+            "./images/plugins/formsync-4.png"
+        ],
+        features: [
+            "Real-time form data synchronization",
+            "Multiple integration options (CRM, email marketing platforms, etc.)",
+            "Custom field mapping",
+            "Conditional logic support",
+            "Detailed sync logs and error reporting"
+        ],
+        demoLink: "#",
+        docLink: "#",
+        badge: "Featured"
+    },
+    {
+        id: 2,
+        name: "SEO Metadata Export & Import",
+        logo: "<i class='fas fa-exchange-alt'></i>", // FontAwesome icon as placeholder
+        tagline: "Effortless SEO data migration",
+        description: "This plugin simplifies the process of migrating SEO metadata between WordPress sites, allowing you to export and import crucial SEO information without losing your valuable optimization work.",
+        screenshots: [
+            "./images/plugins/seo-metadata-1.jpg",
+            "./images/plugins/seo-metadata-2.jpg",
+            "./images/plugins/seo-metadata-3.jpg",
+        ],
+        features: [
+            "One-click export/import functionality",
+            "Support for major SEO plugins (Yoast, Rank Math, etc.)",
+            "Selective data migration options",
+            "CSV/JSON format support",
+            "Automatic mapping of content relationships"
+        ],
+        demoLink: "#",
+        docLink: "#",
+        badge: "New"
+    }
+];
+
+// Function to initialize plugins section
+function initPluginsSection() {
+    const pluginsContainer = document.querySelector('.plugins-container');
+    if (!pluginsContainer) return;
+    
+    // Clear existing content
+    pluginsContainer.innerHTML = '';
+    
+    // Generate HTML for each plugin
+    wordpressPlugins.forEach(plugin => {
+        pluginsContainer.innerHTML += createPluginCard(plugin);
+    });
+    
+    // Initialize screenshot sliders after cards are added
+    initScreenshotSliders();
+    
+    // Observe plugin cards for animation
+    observePluginCards();
+}
+
+// Plugin Documentation Data
+const pluginDocs = {
+    1: { // FormSync
+        title: "FormSync Documentation",
+        content: `
+            <h1>FormSync - User Guide</h1>
+            
+            <h2>Introduction</h2>
+            <p>FormSync is a powerful WordPress plugin that enables seamless synchronization of form submissions across multiple platforms and services. This guide will help you set up and make the most of FormSync's features.</p>
+            
+            <h2>Installation</h2>
+            <ol>
+                <li>Download the FormSync plugin ZIP file</li>
+                <li>Go to your WordPress admin panel, navigate to <code>Plugins > Add New</code></li>
+                <li>Click "Upload Plugin" and select the FormSync ZIP file</li>
+                <li>Click "Install Now" and then "Activate Plugin"</li>
+            </ol>
+            
+            <h2>Setting Up Your First Sync</h2>
+            <p>After activating FormSync, you'll find a new menu item in your WordPress admin panel. Follow these steps to set up your first sync:</p>
+            
+            <ol>
+                <li>Go to <code>FormSync > New Connection</code></li>
+                <li>Select the form plugin you're using (Contact Form 7, Gravity Forms, etc.)</li>
+                <li>Choose the specific form you want to sync</li>
+                <li>Select the destination service (CRM, email marketing platform, etc.)</li>
+                <li>Map the form fields to corresponding fields in your destination service</li>
+                <li>Set up any conditional logic if needed</li>
+                <li>Save your configuration</li>
+            </ol>
+            
+            <h2>Field Mapping</h2>
+            <p>Field mapping is a crucial part of setting up FormSync. This determines how data from your form corresponds to fields in your destination service.</p>
+            
+            <h3>Basic Mapping</h3>
+            <p>For basic mapping, simply select the form field from the dropdown and choose the corresponding destination field.</p>
+            
+            <h3>Advanced Mapping</h3>
+            <p>Advanced mapping allows you to:</p>
+            <ul>
+                <li>Combine multiple form fields into one destination field</li>
+                <li>Split a form field into multiple destination fields</li>
+                <li>Apply transformations to field data (uppercase, lowercase, etc.)</li>
+                <li>Set default values for empty fields</li>
+            </ul>
+            
+            <h2>Conditional Logic</h2>
+            <p>With conditional logic, you can determine when data should be synced based on specific conditions. For example:</p>
+            <ul>
+                <li>Only sync if a specific field contains a certain value</li>
+                <li>Skip synchronization if a field is empty</li>
+                <li>Route different submissions to different destinations based on form values</li>
+            </ul>
+            
+            <h2>Troubleshooting</h2>
+            <p>If you encounter issues with FormSync, check the following:</p>
+            <ul>
+                <li>Verify your API credentials for the destination service</li>
+                <li>Check the Sync Logs to see if there are any error messages</li>
+                <li>Ensure that the field mapping is correct</li>
+                <li>Test your form to ensure it's working properly</li>
+            </ul>
+            
+            <h2>Need Help?</h2>
+            <p>If you need further assistance, please contact our support team at support@formsync.com</p>
+        `
+    },
+    2: { // SEO Metadata Export & Import
+        title: "SEO Metadata Export & Import Documentation",
+        content: `
+            <h1>SEO Metadata Export & Import - User Guide</h1>
+            
+            <h2>Introduction</h2>
+            <p>SEO Metadata Export & Import is a specialized WordPress plugin designed to simplify the process of migrating SEO metadata between WordPress sites. This guide will help you understand how to use this plugin effectively.</p>
+            
+            <h2>Installation</h2>
+            <ol>
+                <li>Download the SEO Metadata Export & Import plugin ZIP file</li>
+                <li>Go to your WordPress admin panel, navigate to <code>Plugins > Add New</code></li>
+                <li>Click "Upload Plugin" and select the plugin ZIP file</li>
+                <li>Click "Install Now" and then "Activate Plugin"</li>
+            </ol>
+            
+            <h2>Exporting SEO Metadata</h2>
+            <p>To export SEO metadata from your WordPress site:</p>
+            <ol>
+                <li>Go to <code>Tools > SEO Metadata Export</code> in your WordPress admin panel</li>
+                <li>Select which SEO plugin data you want to export (Yoast SEO, Rank Math, All in One SEO, etc.)</li>
+                <li>Choose the content types to include (posts, pages, custom post types, etc.)</li>
+                <li>Select specific metadata elements to export (titles, descriptions, focus keywords, etc.)</li>
+                <li>Choose the export format (JSON or CSV)</li>
+                <li>Click "Generate Export" to create your export file</li>
+                <li>Download the file to your computer</li>
+            </ol>
+            
+            <h2>Importing SEO Metadata</h2>
+            <p>To import SEO metadata to your WordPress site:</p>
+            <ol>
+                <li>Go to <code>Tools > SEO Metadata Import</code> in your WordPress admin panel</li>
+                <li>Select the destination SEO plugin (where you want to import the data)</li>
+                <li>Upload the export file you previously created</li>
+                <li>Map the content IDs or use the automatic matching feature</li>
+                <li>Preview the changes before applying</li>
+                <li>Click "Import Metadata" to complete the process</li>
+            </ol>
+            
+            <h2>Content Matching</h2>
+            <p>When importing SEO metadata, you need to match the content from your export file with the content on your destination site. The plugin offers several matching methods:</p>
+            <ul>
+                <li><strong>ID Matching:</strong> Match content based on post/page IDs (only works well when migrating between similar sites)</li>
+                <li><strong>Slug Matching:</strong> Match content based on URL slugs (recommended for most cases)</li>
+                <li><strong>Title Matching:</strong> Match content based on post/page titles</li>
+                <li><strong>Manual Matching:</strong> Manually select matches for each item</li>
+            </ul>
+            
+            <h2>Supported SEO Plugins</h2>
+            <p>The SEO Metadata Export & Import plugin supports the following SEO plugins:</p>
+            <ul>
+                <li>Yoast SEO</li>
+                <li>Rank Math</li>
+                <li>All in One SEO</li>
+                <li>SEOPress</li>
+                <li>The SEO Framework</li>
+            </ul>
+            
+            <h2>Advanced Features</h2>
+            <h3>Selective Imports</h3>
+            <p>You can choose to import only specific types of metadata, such as:</p>
+            <ul>
+                <li>SEO titles</li>
+                <li>Meta descriptions</li>
+                <li>Focus keywords</li>
+                <li>Social media metadata</li>
+                <li>Schema markup settings</li>
+                <li>Advanced robots meta settings</li>
+            </ul>
+            
+            <h3>Batch Processing</h3>
+            <p>For large sites, the plugin offers batch processing to handle imports in chunks, preventing timeouts and memory issues.</p>
+            
+            <h2>Troubleshooting</h2>
+            <p>Common issues and solutions:</p>
+            <ul>
+                <li><strong>Import fails:</strong> Try reducing the batch size in the plugin settings</li>
+                <li><strong>Content not matching:</strong> Use a different matching method or try manual matching</li>
+                <li><strong>Missing metadata:</strong> Ensure that your export included all necessary data fields</li>
+                <li><strong>Plugin conflicts:</strong> Temporarily disable other SEO plugins during import</li>
+            </ul>
+            
+            <h2>Need Help?</h2>
+            <p>If you need further assistance, please contact our support team at support@seometadata.com</p>
+        `
+    }
+};
+
+// Update the createPluginCard function to add the onclick handler for "View Demo"
+function createPluginCard(plugin) {
+    // Generate screenshot elements
+    const screenshotsHTML = plugin.screenshots.map((screenshot) => 
+        `<img src="${screenshot}" class="screenshot" alt="${plugin.name} screenshot">`
+    ).join('');
+    
+    // Generate screenshot navigation dots
+    const dotsHTML = plugin.screenshots.map((_, index) => 
+        `<div class="screenshot-dot ${index === 0 ? 'active' : ''}" data-index="${index}"></div>`
+    ).join('');
+    
+    // Generate features list
+    const featuresHTML = plugin.features.map(feature => 
+        `<li>${feature}</li>`
+    ).join('');
+    
+    return `
+        <div class="plugin-card" data-plugin-id="${plugin.id}">
+            <div class="plugin-header">
+                <div class="plugin-logo">
+                    ${plugin.logo}
+                </div>
+                <div class="plugin-title">
+                    <h3>${plugin.name}</h3>
+                    <p>${plugin.tagline}</p>
+                </div>
+                ${plugin.badge ? `<span class="plugin-badge">${plugin.badge}</span>` : ''}
+            </div>
+            
+            <div class="plugin-content">
+                <div class="plugin-screenshots">
+                    <div class="screenshots-container" data-current="0">
+                        ${screenshotsHTML}   
+                    </div>
+                    <div class="screenshot-nav">
+                        ${dotsHTML}
+                    </div>
+                    <div class="screenshot-arrows">
+                        <div class="arrow arrow-left"><i class="fas fa-chevron-left"></i></div>
+                        <div class="arrow arrow-right"><i class="fas fa-chevron-right"></i></div>
+                    </div>
+                </div>
+                
+                <div class="plugin-description">
+                    ${plugin.description}
+                </div>
+                
+                <div class="plugin-features">
+                    <h4>Key Features</h4>
+                    <ul class="feature-list">
+                        ${featuresHTML}
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="plugin-actions">
+                <a href="javascript:void(0)" class="plugin-link" onclick="openScreenshotModal(${plugin.id})">
+                    <i class="fas fa-play-circle"></i> View Demo
+                </a>
+                <a href="javascript:void(0)" class="plugin-link" onclick="openDocsModal(${plugin.id})">
+                    <i class="fas fa-book"></i> Documentation
+                </a>
+            </div>
+        </div>
+    `;
+}
+
+// Function to open the documentation modal
+function openDocsModal(pluginId) {
+    const modal = document.getElementById('docs-modal');
+    const modalTitle = modal.querySelector('.modal-title');
+    const modalContent = modal.querySelector('.docs-content');
+    const modalLogo = modal.querySelector('.modal-plugin-logo');
+    
+    // Find the plugin data
+    const plugin = wordpressPlugins.find(p => p.id === pluginId);
+    if (!plugin) return;
+    
+    // Find the plugin documentation
+    const pluginDoc = pluginDocs[pluginId];
+    if (!pluginDoc) {
+        modalContent.innerHTML = '<p>Documentation is currently being updated. Please check back later.</p>';
+    } else {
+        modalContent.innerHTML = pluginDoc.content;
+    }
+    
+    // Set the modal title and logo
+    modalTitle.textContent = plugin.name;
+    modalLogo.innerHTML = plugin.logo;
+    
+    // Show the modal
+    modal.style.display = 'block';
+    setTimeout(() => {
+        modal.classList.add('show');
+    }, 10);
+    
+    // Disable body scroll
+    document.body.style.overflow = 'hidden';
+}
+
+// Function to close modals
+function closeModals() {
+    const modals = document.querySelectorAll('.modal');
+    modals.forEach(modal => {
+        modal.classList.remove('show');
+        setTimeout(() => {
+            modal.style.display = 'none';
+        }, 300);
+    });
+    
+    // Re-enable body scroll
+    document.body.style.overflow = '';
+}
+
+// Add event listeners for modal close buttons
+document.addEventListener('DOMContentLoaded', function() {
+    // Add modal close buttons functionality
+    const closeButtons = document.querySelectorAll('.modal-close');
+    closeButtons.forEach(button => {
+        button.addEventListener('click', closeModals);
+    });
+    
+    // Close modals when clicking outside of modal content
+    const modals = document.querySelectorAll('.modal');
+    modals.forEach(modal => {
+        modal.addEventListener('click', function(event) {
+            if (event.target === modal) {
+                closeModals();
+            }
+        });
+    });
+    
+    // Close modals with Escape key
+    document.addEventListener('keydown', function(event) {
+        if (event.key === 'Escape') {
+            closeModals();
+        }
+    });
+    
+    // Add keyboard navigation for screenshot modal
+    document.addEventListener('keydown', function(event) {
+        const modal = document.getElementById('screenshot-modal');
+        if (modal.style.display === 'block') {
+            if (event.key === 'ArrowLeft') {
+                modal.querySelector('.modal-prev').click();
+            } else if (event.key === 'ArrowRight') {
+                modal.querySelector('.modal-next').click();
+            }
+        }
+    });
+});
+
+// Initialize screenshot sliders
+function initScreenshotSliders() {
+    // Get all plugin cards
+    const pluginCards = document.querySelectorAll('.plugin-card');
+    
+    pluginCards.forEach(card => {
+        const container = card.querySelector('.screenshots-container');
+        const dots = card.querySelectorAll('.screenshot-dot');
+        const leftArrow = card.querySelector('.arrow-left');
+        const rightArrow = card.querySelector('.arrow-right');
+        
+        // Set up dot navigation
+        dots.forEach(dot => {
+            dot.addEventListener('click', () => {
+                const index = parseInt(dot.dataset.index);
+                navigateToSlide(container, dots, index);
+            });
+        });
+        
+        // Set up arrow navigation
+        if (leftArrow && rightArrow) {
+            leftArrow.addEventListener('click', () => {
+                const currentIndex = parseInt(container.dataset.current || 0);
+                const newIndex = (currentIndex - 1 + dots.length) % dots.length;
+                navigateToSlide(container, dots, newIndex);
+            });
+            
+            rightArrow.addEventListener('click', () => {
+                const currentIndex = parseInt(container.dataset.current || 0);
+                const newIndex = (currentIndex + 1) % dots.length;
+                navigateToSlide(container, dots, newIndex);
+            });
+        }
+        
+        // Auto-advance slides every 5 seconds
+        let slideInterval = setInterval(() => {
+            const currentIndex = parseInt(container.dataset.current || 0);
+            const newIndex = (currentIndex + 1) % dots.length;
+            navigateToSlide(container, dots, newIndex);
+        }, 5000);
+        
+        // Pause auto-advance on hover
+        card.querySelector('.plugin-screenshots').addEventListener('mouseenter', () => {
+            clearInterval(slideInterval);
+        });
+        
+        // Resume auto-advance when mouse leaves
+        card.querySelector('.plugin-screenshots').addEventListener('mouseleave', () => {
+            slideInterval = setInterval(() => {
+                const currentIndex = parseInt(container.dataset.current || 0);
+                const newIndex = (currentIndex + 1) % dots.length;
+                navigateToSlide(container, dots, newIndex);
+            }, 5000);
+        });
+    });
+}
+
+// Navigate to a specific slide
+function navigateToSlide(container, dots, index) {
+    // Update container position
+    container.style.transform = `translateX(-${index * 100}%)`;
+    container.dataset.current = index;
+    
+    // Update active dot
+    dots.forEach((dot, i) => {
+        if (i === index) {
+            dot.classList.add('active');
+        } else {
+            dot.classList.remove('active');
+        }
+    });
+}
+
+// Observe plugin cards for animation
+function observePluginCards() {
+    const pluginCards = document.querySelectorAll('.plugin-card');
+    
+    const observerOptions = {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.1
+    };
+    
+    const cardObserver = new IntersectionObserver((entries) => {
+        entries.forEach((entry, index) => {
+            if (entry.isIntersecting) {
+                setTimeout(() => {
+                    entry.target.classList.add('animated');
+                }, index * 150);
+                cardObserver.unobserve(entry.target);
+            }
+        });
+    }, observerOptions);
+    
+    pluginCards.forEach(card => {
+        cardObserver.observe(card);
+    });
+}
+
+// Add plugin section initialization to the existing DOMContentLoaded handler
+document.addEventListener('DOMContentLoaded', function() {
+    // Existing code...
+    
+    // Initialize plugins section
+    initPluginsSection();
+    
+    // Add plugins to the nav links if needed
+    const navLinks = document.querySelector('.nav-links');
+    if (navLinks && !document.querySelector('.nav-links a[href="#plugins"]')) {
+        const contactLink = document.querySelector('.nav-links a[href="#contact"]');
+        if (contactLink) {
+            const pluginsLink = document.createElement('li');
+            pluginsLink.innerHTML = '<a href="#plugins">Plugins</a>';
+            navLinks.insertBefore(pluginsLink, contactLink.parentElement);
+        }
+    }
+});
+
+// Function to add a new plugin (can be called from the console or other scripts)
+function addNewPlugin(pluginData) {
+    // Add to the plugins array
+    wordpressPlugins.push({
+        id: wordpressPlugins.length + 1,
+        ...pluginData
+    });
+    
+    // Reinitialize the plugins section
+    initPluginsSection();
+}
+
+// Function to create and open the screenshot modal
+function openScreenshotModal(pluginId) {
+    // Find the plugin data
+    const plugin = wordpressPlugins.find(p => p.id === pluginId);
+    if (!plugin) return;
+    
+    // Get or create the screenshot modal
+    let modal = document.getElementById('screenshot-modal');
+    
+    // If modal doesn't exist, create it
+    if (!modal) {
+        modal = document.createElement('div');
+        modal.id = 'screenshot-modal';
+        modal.className = 'modal screenshot-modal';
+        document.body.appendChild(modal);
+    }
+    
+    // Generate screenshot slides HTML
+    const screenshotsHTML = plugin.screenshots.map((screenshot) => 
+        `<div class="modal-slide">
+            <img src="${screenshot}" alt="${plugin.name} screenshot">
+        </div>`
+    ).join('');
+    
+    // Generate screenshot navigation dots
+    const dotsHTML = plugin.screenshots.map((_, index) => 
+        `<div class="modal-dot ${index === 0 ? 'active' : ''}" data-index="${index}"></div>`
+    ).join('');
+    
+    // Set modal content
+    modal.innerHTML = `
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>${plugin.name} - Screenshots</h3>
+                <span class="modal-close">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div class="modal-slider" data-current="0">
+                    ${screenshotsHTML}
+                </div>
+                <div class="modal-nav">
+                    <button class="modal-arrow modal-prev">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <div class="modal-dots">
+                        ${dotsHTML}
+                    </div>
+                    <button class="modal-arrow modal-next">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    `;
+    
+    // Show the modal
+    modal.style.display = 'block';
+    setTimeout(() => {
+        modal.classList.add('show');
+    }, 10);
+    
+    // Add event listeners for navigation
+    const slider = modal.querySelector('.modal-slider');
+    const dots = modal.querySelectorAll('.modal-dot');
+    const prevBtn = modal.querySelector('.modal-prev');
+    const nextBtn = modal.querySelector('.modal-next');
+    const closeBtn = modal.querySelector('.modal-close');
+    
+    // Close button functionality
+    closeBtn.addEventListener('click', closeModals);
+    
+    // Navigation dot functionality
+    dots.forEach(dot => {
+        dot.addEventListener('click', () => {
+            const index = parseInt(dot.dataset.index);
+            navigateModalSlide(slider, dots, index);
+        });
+    });
+    
+    // Previous button functionality
+    prevBtn.addEventListener('click', () => {
+        const currentIndex = parseInt(slider.dataset.current || 0);
+        const newIndex = (currentIndex - 1 + dots.length) % dots.length;
+        navigateModalSlide(slider, dots, newIndex);
+    });
+    
+    // Next button functionality
+    nextBtn.addEventListener('click', () => {
+        const currentIndex = parseInt(slider.dataset.current || 0);
+        const newIndex = (currentIndex + 1) % dots.length;
+        navigateModalSlide(slider, dots, newIndex);
+    });
+    
+    // Disable body scroll
+    document.body.style.overflow = 'hidden';
+}
+
+// Function to navigate modal slides
+function navigateModalSlide(slider, dots, index) {
+    // Update slider position
+    slider.style.transform = `translateX(-${index * 100}%)`;
+    slider.dataset.current = index;
+    
+    // Update active dot
+    dots.forEach((dot, i) => {
+        if (i === index) {
+            dot.classList.add('active');
+        } else {
+            dot.classList.remove('active');
+        }
+    });
+}
+

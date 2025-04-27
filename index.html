@@ -140,9 +140,6 @@
             </div>
         </div>
     </section>
-
-
-
     
 <!-- Projects Section -->
 <section id="projects" class="projects">
@@ -164,9 +161,23 @@
       <!-- Projects will be dynamically inserted here -->
       <div class="projects-grid">
           <!-- JavaScript will populate this container -->
-      </div>
+      </div>    
   </div>
 </section>
+
+    <!-- Custom Plugins Section -->
+    <section id="plugins" class="plugins">
+        <div class="container">
+            <div class="section-header">
+                <h2>My WordPress Plugins</h2>
+                <p>Custom solutions to enhance your WordPress experience</p>
+            </div>
+
+            <div class="plugins-container">
+                <!-- Plugin items will be dynamically added here -->
+            </div>
+        </div>
+    </section>
 
 
     <!-- Contact Section -->
@@ -266,10 +277,21 @@
 
     <!-- Cursor follow effect -->
     <div class="cursor"></div>
+        
 
-
-    
-
+    <!-- Modal for documentation -->
+    <div id="docs-modal" class="modal">
+        <div class="modal-content docs-modal-content">
+            <span class="modal-close">&times;</span>
+            <div class="modal-header">
+                <div class="modal-plugin-logo"></div>
+                <h2 class="modal-title"></h2>
+            </div>
+            <div class="modal-body docs-content">
+                <!-- Documentation content will be loaded here -->
+            </div>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>
