@@ -89,6 +89,8 @@ section {
   overflow: hidden;
 }
 
+
+
 .container {
   width: var(--container-width-lg);
   max-width: 140rem;
@@ -287,6 +289,8 @@ section {
   padding-top: 8rem;
 }
 
+
+
 .hero::before {
   content: '';
   position: absolute;
@@ -303,6 +307,7 @@ section {
   gap: 4rem;
   align-items: center;
 }
+
 
 .hero-content h1 {
   margin-bottom: 1rem;
@@ -348,6 +353,7 @@ section {
   opacity: 0;
   transform: translateX(20px);
   animation: fadeInRight 0.8s ease forwards 1.3s;
+  top: 16%;
 }
 
 .shape-container {

@@ -10,20 +10,8 @@ function initCodePanel(containerId) {
     <div class="cp-code-panel"> 
       <div class="cp-editor">
         <pre class="cp-code">
-<div class="cp-input-line"><span class="cp-keyword">const </span> <span class="cp-variable">visitorName</span> = <input type="text" id="cp-name-input" placeholder="type your name here"></div>
-<span class="cp-keyword">function</span> <span class="cp-function">generateGreeting</span>() {
-  <span class="cp-keyword">const</span> <span class="cp-variable">time</span> = <span class="cp-keyword">new</span> <span class="cp-function">Date</span>().getHours();
-  <span class="cp-keyword">let</span> <span class="cp-variable">greeting</span>;
-  <span class="cp-keyword">if</span> (<span class="cp-variable">time</span> < 12) {
-    <span class="cp-variable">greeting</span> = <span class="cp-string">"Good morning"</span>;
-  } <span class="cp-keyword">else if</span> (<span class="cp-variable">time</span> < 18) {
-    <span class="cp-variable">greeting</span> = <span class="cp-string">"Good afternoon"</span>;
-  } <span class="cp-keyword">else</span> {
-    <span class="cp-variable">greeting</span> = <span class="cp-string">"Good evening"</span>;
-  }
-  
-  <span class="cp-keyword">return</span> <span class="cp-string">\`\${greeting}, \${visitorName}! Welcome to my portfolio. 
-  How can I help you today?\`</span>;
+<div class="cp-input-line"><span class="cp-keyword">const </span> <span class="cp-variable">visitorName</span> = <input type="text" id="cp-name-input" placeholder="Enter your name"></div>
+<span class="cp-keyword">return</span> <span class="cp-string">\${greeting} \${visitorName}! Welcome to my portfolio. How can I help you today?</span>;
 }</pre>
         <button class="cp-button" onclick="runCodePanel()">Run Code</button>
       </div>
@@ -54,19 +42,19 @@ function runCodePanel() {
   const outputContent = document.getElementById('cp-output-content');
   outputContent.innerHTML = "";
   
-  // Get current time for greeting
-  const time = new Date().getHours();
-  let greeting;
-  
-  if (time < 12) {
-    greeting = "Good morning";
-  } else if (time < 18) {
-    greeting = "Good afternoon";
-  } else {
-    greeting = "Good evening";
-  }
-  
-  const message = `${greeting}, ${visitorName}! Welcome to my portfolio.\nHow can I help you today?`;
+ // Get current time for greeting
+ const time = new Date().getHours();
+ let greeting;
+ 
+ if (time < 12) {
+   greeting = "Good morning";
+ } else if (time < 18) {
+   greeting = "Good afternoon";
+ } else {
+   greeting = "Good evening";
+ }
+ 
+ const message = `${greeting}, ${visitorName}! Welcome to my portfolio. How can I help you today?`;
   
   // Clear any existing classes
   outputContent.className = "cp-output-content";
@@ -95,22 +83,17 @@ function addCodePanelStyles() {
       --cp-accent: #94e2d5;
       
       width: 100%;
-      max-width: 600px;
+      max-width: 550px;
       margin: 20px auto;
+      
       border-radius: 8px;
       overflow: hidden;
       box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
       font-family: "JetBrains Mono", monospace;
       color: var(--cp-text);
+
     }
-    
-    .cp-header {
-      display: flex;
-      background-color: #282a36;
-      padding: 8px 12px;
-      align-items: center;
-    }
-    
+   
     .cp-dot {
       height: 12px;
       width: 12px;
@@ -137,19 +120,23 @@ function addCodePanelStyles() {
     
     .cp-code {
       margin: 0;
-      white-space: pre;
+      white-space: pre-wrap;
+      word-wrap: break-word;
       font-size: 14px;
+      overflow-x: hidden;
     }
     
     .cp-keyword { color: var(--cp-keyword); }
     .cp-function { color: var(--cp-function); }
-    .cp-string { color: var(--cp-string); }
+    .cp-string { color: var(--cp-string); word-break: break-word; }
     .cp-variable { color: var(--cp-variable); }
     .cp-comment { color: var(--cp-comment); }
     
     .cp-input-line {
       display: flex;
       margin: 10px 0;
+      flex-wrap: wrap;
+      align-items: center;
     }
     
     #cp-name-input {
@@ -161,7 +148,22 @@ function addCodePanelStyles() {
       font-size: 14px;
       padding: 2px 6px;
       outline: none;
-      width: 160px;
+      width: 100%;
+      max-width: 160px;
+      box-sizing: border-box;
+    }
+    
+    @media screen and (max-width: 480px) {
+      .cp-input-line {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      
+      #cp-name-input {
+        margin-left: 0;
+        margin-top: 8px;
+        max-width: 100%;
+      }
     }
     
     .cp-button {
@@ -209,12 +211,13 @@ function addCodePanelStyles() {
       font-size: 14px;
       line-height: 1.5;
       min-height: 24px;
+      word-wrap: break-word;
     }
     
     .cp-typing-animation {
       overflow: hidden;
       border-right: 2px solid var(--cp-accent);
-      white-space: nowrap;
+      white-space: normal;
       margin: 0;
       animation: cp-typing 3.5s steps(40, end), cp-blink-caret 0.75s step-end infinite;
     }
