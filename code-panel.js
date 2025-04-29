@@ -12,7 +12,7 @@ function initCodePanel(containerId) {
         <pre class="cp-code">
 <div class="cp-input-line"><span class="cp-keyword">const </span> <span class="cp-variable">visitorName</span> = <input type="text" id="cp-name-input" placeholder="Enter your name"></div>
 <span class="cp-keyword">return</span> <span class="cp-string">\${greeting} \${visitorName}! Welcome to my portfolio. How can I help you today?</span>;
-}</pre>
+</pre>
         <button class="cp-button" onclick="runCodePanel()">Run Code</button>
       </div>
       <div class="cp-output">
@@ -155,7 +155,7 @@ function addCodePanelStyles() {
     
     @media screen and (max-width: 480px) {
       .cp-input-line {
-        flex-direction: column;
+        flex-direction: row;
         align-items: flex-start;
       }
       

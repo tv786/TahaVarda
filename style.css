@@ -289,8 +289,6 @@ section {
   padding-top: 8rem;
 }
 
-
-
 .hero::before {
   content: '';
   position: absolute;
@@ -894,6 +892,10 @@ section {
   
   .plugins {
       padding: 70px 0;
+  }
+  .hero-image {
+    top: 0%;
+    margin-bottom: 50px;
   }
 }
 
