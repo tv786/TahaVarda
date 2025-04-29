@@ -60,10 +60,21 @@ function runCodePanel() {
   outputContent.className = "cp-output-content";
   
   // Add typing animation effect
-  setTimeout(() => {
-    outputContent.textContent = message;
-    outputContent.classList.add("cp-typing-animation");
-  }, 300);
+  outputContent.textContent = "";
+  
+  // Create a better typing animation
+  let i = 0;
+  outputContent.classList.add("cp-typing-animation");
+  
+  const typeWriter = () => {
+    if (i < message.length) {
+      outputContent.textContent += message.charAt(i);
+      i++;
+      setTimeout(typeWriter, 50);
+    }
+  };
+  
+  setTimeout(typeWriter, 300);
 }
 
 // Add CSS styles for the code panel
@@ -124,6 +135,8 @@ function addCodePanelStyles() {
       word-wrap: break-word;
       font-size: 14px;
       overflow-x: hidden;
+      text-align: left;
+
     }
     
     .cp-keyword { color: var(--cp-keyword); }
@@ -158,6 +171,7 @@ function addCodePanelStyles() {
         flex-direction: row;
         align-items: flex-start;
       }
+
       
       #cp-name-input {
         margin-left: 0;
@@ -212,24 +226,31 @@ function addCodePanelStyles() {
       line-height: 1.5;
       min-height: 24px;
       word-wrap: break-word;
+      text-align: left;
     }
     
     .cp-typing-animation {
-      overflow: hidden;
-      border-right: 2px solid var(--cp-accent);
-      white-space: normal;
+      position: relative;
+      display: inline-block;
+      width: 100%;
       margin: 0;
-      animation: cp-typing 3.5s steps(40, end), cp-blink-caret 0.75s step-end infinite;
+      overflow: visible;
     }
     
-    @keyframes cp-typing {
-      from { width: 0 }
-      to { width: 100% }
+    .cp-typing-animation:after {
+      content: '';
+      position: absolute;
+      right: -4px;
+      top: 0;
+      height: 100%;
+      width: 2px;
+      background-color: var(--cp-accent);
+      animation: cp-blink-caret 0.75s step-end infinite;
     }
     
     @keyframes cp-blink-caret {
-      from, to { border-color: transparent }
-      50% { border-color: var(--cp-accent); }
+      from, to { opacity: 0; }
+      50% { opacity: 1; }
     }
   `;
   document.head.appendChild(styleElement);
