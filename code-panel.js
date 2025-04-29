@@ -11,7 +11,7 @@ function initCodePanel(containerId) {
       <div class="cp-editor">
         <pre class="cp-code">
 <div class="cp-input-line"><span class="cp-keyword">const </span> <span class="cp-variable">visitorName</span> = <input type="text" id="cp-name-input" placeholder="Enter your name"></div>
-<span class="cp-keyword">return</span> <span class="cp-string">\${greeting} \${visitorName}! Welcome to my portfolio. How can I help you today?</span>;
+<span class="cp-keyword">return</span> <span class="cp-string">\${greeting} \${visitorName}! Welcome to my portfolio website.</span>;
 </pre>
         <button class="cp-button" onclick="runCodePanel()">Run Code</button>
       </div>
@@ -54,7 +54,7 @@ function runCodePanel() {
    greeting = "Good evening";
  }
  
- const message = `${greeting}, ${visitorName}! Welcome to my portfolio. How can I help you today?`;
+ const message = `${greeting}, ${visitorName}! Welcome to my portfolio website. Check my Projects section for more details.`;
   
   // Clear any existing classes
   outputContent.className = "cp-output-content";
