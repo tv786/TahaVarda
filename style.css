@@ -407,7 +407,6 @@ section {
   background: var(--dark);
   padding: 2rem;
   border-radius: 0.5rem;
-  color: white;
   font-family: 'Fira Code', 'Courier New', monospace;
   font-size: 1.2rem;
   overflow-x: auto;

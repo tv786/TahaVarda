@@ -71,16 +71,21 @@
                     <div class="shape shape-1"></div>
                     <div class="shape shape-2"></div>
                     <div class="shape shape-3"></div>
-                    <div class="code-snippet">
+
+                    <!-- This div will contain the interactive code panel -->
+                    <div id="interactive-code-container"></div>
+
+                    <!-- <div class="code-snippet">
                         <pre><code>&lt;div class="developer"&gt;
   const passion = "web";
   const skills = ["HTML", "CSS", 
     "JavaScript", "PHP"];
+    
   function createMagic() {
     return amazing_websites;
   }
 &lt;/div&gt;</code></pre>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
@@ -297,7 +302,19 @@
     </div>
 
     
-
+    <script src="code-panel.js"></script>
+    <script>
+        // Wait for the page to fully load
+        document.addEventListener('DOMContentLoaded', function() {
+          // Initialize the code panel in the container div
+          window.CodePanel.load('interactive-code-container');
+          
+          // Make the global runCodePanel function available
+          window.runCodePanel = function() {
+            window.CodePanel.run();
+          };
+        });
+      </script>
     <script src="script.js"></script>
 </body>
 </html>

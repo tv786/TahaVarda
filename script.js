@@ -330,7 +330,7 @@ initScrollAnimations();
 initCursorEffect();
 
 // Typing effect words
-const words = ["websites", "web apps", "e-commerce", "experiences"];
+const words = ["websites", "design", "bussiness", "experiences"];
 let currentWordIndex = 0;
 
 // Initialize word changing
