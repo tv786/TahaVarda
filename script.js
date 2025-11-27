@@ -70,7 +70,7 @@ const projects = [
       image: "./images/25.jpeg",
       categories: ["bussiness", "mulitlang"],
       technologies: ["HTML", "CSS", "JavaScript"],
-      liveLink: "https://theaiq.de/"
+      liveLink: "https://customgptaiq.com/"
   },
   {
       id: 9,
@@ -97,7 +97,7 @@ const projects = [
       image: "./images/26.jpeg",
       categories: ["bussiness"],
       technologies: ["HTML", "CSS", "JavaScript"],
-      liveLink: "https://goya-hills.com/"
+      liveLink: "https://goyahills.com/"
   },
   {
       id: 12,
@@ -146,12 +146,12 @@ const projects = [
   },
   {
       id: 17,
-      title: "LEPI Venture",
-      description: "Venture capital firm platform with portfolio management.",
-      image: "./images/9.jpeg",
+      title: "Knappmeier Elektrotechnik",
+      description: "Sustainable energy solutions & electrical engineering services website.",
+      image: "./images/35.jpeg",
       categories: ["bussiness"],
-      technologies: ["JavaScript", "PHP", "MySQL"],
-      liveLink: "#portfolio"
+      technologies: ["WordPress" , "Elementor", "CSS"],
+      liveLink: "https://knappmeier-elektrotechnik.de/"
   },
   {
       id: 18,
