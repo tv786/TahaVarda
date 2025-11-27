@@ -6,7 +6,7 @@ const projects = [
       description: "Website for Siberia Snus brand with responsive design.",
       image: "./images/23.jpeg",
       categories: ["ecommerce"],
-      technologies: ["HTML", "CSS", "JavaScript"],
+      technologies: ["WooCommerce", "Payment", "CSS", "JS"],
       liveLink: "https://www.siberia-snus.de/"
   },
   {
@@ -14,8 +14,8 @@ const projects = [
       title: "Kinews 24",
       description: "News portal website with dynamic content features.",
       image: "./images/29.jpeg",
-      categories: ["news"  ,"mulitlang"],
-      technologies: ["HTML", "CSS", "JavaScript"],
+      categories: ["news", "mulitlang"],
+      technologies: ["WordPress", "Multilanguage", "CSS", "JS"],
       liveLink: "https://kinews24.de/"
   },
   {
@@ -24,8 +24,8 @@ const projects = [
       description: "Networking application platform for professionals.",
       image: "./images/30.jpeg",
       categories: ["bussiness", "mulitlang"],
-      technologies: ["JavaScript", "PHP", "MySQL"],
-      liveLink: "#portfolio"
+      technologies: ["WordPress", "Multilanguage", "GeoRedirect", "CSS"],
+      liveLink: "https://theconnectmore.com/"
   },
   {
       id: 4,
@@ -33,8 +33,8 @@ const projects = [
       description: "Data analytics and insights platform with visualization tools.",
       image: "./images/31.jpeg",
       categories: ["bussiness", "mulitlang"],
-      technologies: ["HTML", "CSS", "JavaScript"],
-      liveLink: "https://do-insights.com/"
+      technologies: ["Multilanguage", "API", "PHP","CSS", "JS"],
+      liveLink: "https://doinsights.in/"
   },
   {
       id: 5,
