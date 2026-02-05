@@ -136,6 +136,15 @@ const projects = [
       liveLink: "https://eurodoors.org/"
   },
   {
+      id: 34,
+      title: "Go Legal Consultancy",
+      description: "Legal consultancy website with services ",
+      image: "./images/36.jpeg",
+      categories: ["bussiness"],
+      technologies: ["HTML", "CSS", "JavaScript", "Elementor"],
+      liveLink: "https://golegalconsultancy.com/",    
+  },
+  {
       id: 16,
       title: "Angel Wealth Advisor",
       description: "Financial advisory service website with client portal.",
@@ -296,7 +305,17 @@ const projects = [
       categories: ["bussiness"],
       technologies: ["HTML", "CSS", "JavaScript"],
       liveLink: "https://shreetoursudaipur.com/"
+  },
+  {
+      id: 35,
+      title: "Alfanzyme",
+      description: "Biotech and pharmaceutical company website with product showcases.",
+      image: "./images/37.jpeg",
+      categories: ["bussiness"],
+      technologies: ["HTML", "CSS", "JavaScript"],
+      liveLink: "#" 
   }
+  
 ];
 
 // DOM Elements
