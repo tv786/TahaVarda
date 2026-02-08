@@ -952,6 +952,37 @@ const pluginDocs = {
             <h2>Need Help?</h2>
             <p>If you need further assistance, please contact our support team at support@seometadata.com</p>
         `
+    },
+    3: { // Restricted Words Check & Replace
+        title: "Restricted Words Check & Replace Documentation",
+        content: `
+            <h1>Restricted Words Check & Replace - User Guide</h1>
+            
+            <h2>Introduction</h2>
+            <p>Restricted Words Check & Replace is a WordPress plugin that helps you manage restricted words in your site. This guide will help you understand how to use this plugin effectively.</p>
+            
+            <h2>Installation</h2>
+            <ol>
+                <li>Download the Restricted Words Check & Replace plugin ZIP file</li>
+                <li>Go to your WordPress admin panel, navigate to <code>Plugins > Add New</code></li>
+                <li>Click "Upload Plugin" and select the plugin ZIP file</li>
+                <li>Click "Install Now" and then "Activate Plugin"</li>
+            </ol>
+            
+            <h2>Using the Plugin</h2>
+            <p>Once the plugin is activated, you can use it to manage restricted words in your site. Here's how:</p>
+            <ol></ol>
+                <li>Go to <code>Restricted Words Check & Replace</code> in your WordPress admin panel</li>
+                <li>Enter the list of restricted words you want to check and replace</li>
+                <li>Click "Save Changes"</li>
+                <li>Then go to <strong>Site Scan</strong> in the plugin menu, click the Site Scan option to check for restricted words in your site</li>
+                <li>Review the scan results and choose to replace or remove restricted words as needed</li>
+                <li>For Bulk Edits Go to <strong>Bulk Replace</strong> option, Select the words you want to replace and the words you want to replace them with, then click "Preview" to see the changes, then click "Save Changes".</li>
+            </ol>
+            
+            <h2>Need Help?</h2>
+            <p>If you need further assistance, please contact our support team at support@seometadata.com</p>
+        `
     }
 };
 
