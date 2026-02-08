@@ -172,6 +172,15 @@ const projects = [
       liveLink: "https://gutachter24.berlin/"
   },
   {
+      id: 36,
+      title: "Active Bio Pharma",
+      description: "Biopharmaceutical company website with product showcases and research highlights.",
+      image: "./images/38.jpeg",
+      categories: ["bussiness", "mulitlang"],
+      technologies: ["HTML", "CSS", "JavaScript", "Elementor"],
+      liveLink: "https://activebiop.com/"
+  },
+  {
       id: 19,
       title: "Go-Finance",
       description: "Financial information and services website with interactive tools.",
