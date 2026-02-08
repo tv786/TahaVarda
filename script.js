@@ -862,9 +862,7 @@ const pluginDocs = {
                 <li>Ensure that the field mapping is correct</li>
                 <li>Test your form to ensure it's working properly</li>
             </ul>
-            
-            <h2>Need Help?</h2>
-            <p>If you need further assistance, please contact our support team at support@formsync.com</p>
+         
         `
     },
     2: { // SEO Metadata Export & Import
@@ -948,9 +946,7 @@ const pluginDocs = {
                 <li><strong>Missing metadata:</strong> Ensure that your export included all necessary data fields</li>
                 <li><strong>Plugin conflicts:</strong> Temporarily disable other SEO plugins during import</li>
             </ul>
-            
-            <h2>Need Help?</h2>
-            <p>If you need further assistance, please contact our support team at support@seometadata.com</p>
+      
         `
     },
     3: { // Restricted Words Check & Replace
@@ -971,17 +967,15 @@ const pluginDocs = {
             
             <h2>Using the Plugin</h2>
             <p>Once the plugin is activated, you can use it to manage restricted words in your site. Here's how:</p>
-            <ol></ol>
+            <ul>
                 <li>Go to <code>Restricted Words Check & Replace</code> in your WordPress admin panel</li>
                 <li>Enter the list of restricted words you want to check and replace</li>
                 <li>Click "Save Changes"</li>
                 <li>Then go to <strong>Site Scan</strong> in the plugin menu, click the Site Scan option to check for restricted words in your site</li>
                 <li>Review the scan results and choose to replace or remove restricted words as needed</li>
                 <li>For Bulk Edits Go to <strong>Bulk Replace</strong> option, Select the words you want to replace and the words you want to replace them with, then click "Preview" to see the changes, then click "Save Changes".</li>
-            </ol>
-            
-            <h2>Need Help?</h2>
-            <p>If you need further assistance, please contact our support team at support@seometadata.com</p>
+            </ul>
+         
         `
     }
 };
