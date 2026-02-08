@@ -753,6 +753,30 @@ const wordpressPlugins = [
         demoLink: "#",
         docLink: "#",
         badge: "New"
+    },
+    {
+        id: 3,
+        name: "Restricted Words Check & Replace",
+        logo: "<i class='fas fa-ban'></i>", // FontAwesome icon as placeholder
+        tagline: "Secure content protection",
+        description: "This plugin provides a flexible solution for checking and replacing restricted words in your WordPress content, ensuring a secure and compliant environment for your audience. Compatible with popular page builders and supports multilingual content.",
+        screenshots: [
+            "./images/plugins/restricted-words-1.jpeg",
+            "./images/plugins/restricted-words-2.jpeg",
+            "./images/plugins/restricted-words-3.jpeg",
+            "./images/plugins/restricted-words-4.jpeg",
+            "./images/plugins/restricted-words-5.jpeg"
+        ],
+        features: [
+            "Customizable restricted words list",
+            "Support for multilingual content",
+            "Integration with popular page builders",
+            "User-friendly interface for easy configuration",
+            "Detailed logging and error reporting"
+        ],
+        demoLink: "#",
+        docLink: "#",
+        badge: "New"
     }
 ];
 
