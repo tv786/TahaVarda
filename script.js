@@ -10,6 +10,24 @@ const projects = [
       liveLink: "https://www.siberia-snus.de/"
   },
   {
+      id: 36,
+      title: "Kirat Tjori",
+      description: "Website for Kirat Tjori brand with responsive design.",
+      image: "./images/39.jpeg",
+      categories: ["ecommerce"],
+      technologies: ["WooCommerce", "Payment", "CSS", "JS"],
+      liveLink: "https://kirattjori.com/"
+  },
+  {
+      id: 37,
+      title: "Team Time",
+      description: "Website for Team Time brand with responsive design.",
+      image: "./images/39.jpeg",
+      categories: ["bussiness"],
+      technologies: ["HTML", "CSS", "JavaScript"],
+      liveLink: "https://team-time.net/"
+  },
+  {
       id: 2,
       title: "Kinews 24",
       description: "News portal website with dynamic content features.",
@@ -22,7 +40,7 @@ const projects = [
       id: 3,
       title: "ConnectMore",
       description: "Networking application platform for professionals.",
-      image: "./images/30.jpeg",
+      image: "./images/40.jpeg",
       categories: ["bussiness", "mulitlang"],
       technologies: ["WordPress", "Multilanguage", "GeoRedirect", "CSS"],
       liveLink: "https://theconnectmore.com/"
@@ -47,12 +65,12 @@ const projects = [
   },
   {
       id: 6,
-      title: "Em2 Consulting",
+      title: "Aare Partners",
       description: "Business consulting service website with modern design.",
       image: "./images/22.jpeg",
       categories: ["bussiness"],
       technologies: ["HTML", "CSS", "JavaScript"],
-      liveLink: "https://em2-consulting.com/"
+      liveLink: "https://aarepartners.com/"
   },
   {
       id: 7,
