@@ -22,7 +22,7 @@ const projects = [
       id: 37,
       title: "Team Time",
       description: "Website for Team Time brand with responsive design.",
-      image: "./images/39.jpeg",
+      image: "./images/41.jpeg",
       categories: ["bussiness"],
       technologies: ["HTML", "CSS", "JavaScript"],
       liveLink: "https://team-time.net/"
